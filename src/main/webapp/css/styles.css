@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #f7f9fc 0%, #edf2fa 100%);
+    color: #1d2b3a;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.container.narrow {
+    max-width: 760px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.category {
+    color: #55657a;
+    font-size: 0.9rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+form {
+    display: grid;
+    gap: 0.7rem;
+}
+
+label {
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+}
+
+input,
+textarea,
+button,
+.button-link {
+    border-radius: 8px;
+    border: 1px solid #ccd7e6;
+    font-size: 1rem;
+    padding: 0.6rem 0.75rem;
+}
+
+button,
+.button-link {
+    cursor: pointer;
+    background: #0a6cff;
+    border-color: #0a6cff;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+.button-link:hover {
+    background: #0059d6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e6edf7;
+}
+
+.total {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.checkout-form {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.success-box {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
