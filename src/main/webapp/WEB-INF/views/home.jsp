@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <header>
-        <h1>Shop Products</h1>
+        <h1>Thrift Shopping</h1>
         <a class="button-link" href="${pageContext.request.contextPath}/cart">View Cart</a>
     </header>
 
@@ -32,5 +32,8 @@
         </c:forEach>
     </div>
 </div>
+<footer>
+    <p>&copy; 2026 Thrift Shopping. All rights reserved.</p>
+</footer>
 </body>
 </html>

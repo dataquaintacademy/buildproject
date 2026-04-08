@@ -41,5 +41,8 @@
         </c:otherwise>
     </c:choose>
 </div>
+<footer>
+    <p>&copy; 2026 Thrift Shopping. All rights reserved.</p>
+</footer>
 </body>
 </html>

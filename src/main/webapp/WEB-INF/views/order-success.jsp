@@ -13,5 +13,8 @@
         <a class="button-link" href="${pageContext.request.contextPath}/home">Continue Shopping</a>
     </div>
 </div>
+<footer>
+    <p>&copy; 2026 Thrift Shopping. All rights reserved.</p>
+</footer>
 </body>
 </html>
