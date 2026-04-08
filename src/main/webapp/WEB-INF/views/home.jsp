@@ -5,13 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopHub - Online Shopping Made Easy</title>
+    <title>InstaShop - Shop Like Never Before</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/styles.css">
 </head>
 <body>
 <div class="container">
     <header>
-        <h1>ShopHub Bazaar</h1>
+        <h1>InstaShop</h1>
         <a class="button-link" href="${pageContext.request.contextPath}/cart">🛍️ View Cart</a>
     </header>
 
@@ -35,7 +35,7 @@
     </div>
 </div>
 <footer>
-    <p>&copy; 2026 ShopHub Bazaar. All rights reserved. | Fast Delivery | Secure Payment</p>
+    <p>&copy; 2026 InstaShop. All rights reserved. | Fast Delivery | Secure Payment</p>
 </footer>
 </body>
 </html>
