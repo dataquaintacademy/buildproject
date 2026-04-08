@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: #0095f6;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,10 @@ h1 {
     margin: 0;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #ffffff;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     letter-spacing: -0.5px;
 }
 
@@ -93,7 +96,7 @@ h1::before {
 .price {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #0095f6;
+    color: #f09433;
     margin: 0.75rem 0;
 }
 
@@ -132,7 +135,7 @@ textarea:focus {
 button,
 .button-link {
     cursor: pointer;
-    background: #0095f6;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     border-color: transparent;
     color: #ffffff;
     text-decoration: none;
@@ -144,7 +147,7 @@ button,
 
 button:hover,
 .button-link:hover {
-    background: #007bc7;
+    background: linear-gradient(45deg, #e8872a 0%, #d55a32 25%, #c92239 50%, #b91f5c 75%, #a9167e 100%);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
 }
@@ -164,7 +167,7 @@ table {
 }
 
 th {
-    background: #0095f6;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: #ffffff;
     text-align: left;
     padding: 1rem 0.75rem;
@@ -189,12 +192,12 @@ tr:hover {
 .total {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #0095f6;
+    color: #f09433;
     margin: 1.5rem 0;
     padding: 1rem;
     background: #f8f8f8;
     border-radius: 8px;
-    border-left: 4px solid #0095f6;
+    border-left: 4px solid #f09433;
 }
 
 .checkout-form {
