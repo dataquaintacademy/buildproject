@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-    background: linear-gradient(180deg, #f7f9fc 0%, #edf2fa 100%);
-    color: #1d2b3a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #fafafa;
+    color: #262626;
 }
 
 .container {
@@ -21,10 +21,18 @@ header {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1rem;
 }
 
 h1 {
     margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .product-grid {
@@ -35,9 +43,10 @@ h1 {
 
 .card {
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 1rem;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbdbdb;
 }
 
 .category {
@@ -65,7 +74,7 @@ input,
 textarea,
 button,
 .button-link {
-    border-radius: 8px;
+    border-radius: 4px;
     border: 1px solid #ccd7e6;
     font-size: 1rem;
     padding: 0.6rem 0.75rem;
@@ -74,32 +83,34 @@ button,
 button,
 .button-link {
     cursor: pointer;
-    background: #0a6cff;
-    border-color: #0a6cff;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: transparent;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
     text-align: center;
+    font-weight: 600;
 }
 
 button:hover,
 .button-link:hover {
-    background: #0059d6;
+    opacity: 0.85;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     background: #ffffff;
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
+    border: 1px solid #dbdbdb;
 }
 
 th,
 td {
     text-align: left;
     padding: 0.75rem;
-    border-bottom: 1px solid #e6edf7;
+    border-bottom: 1px solid #efefef;
 }
 
 .total {
@@ -110,14 +121,26 @@ td {
 .checkout-form {
     background: #ffffff;
     padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbdbdb;
 }
 
 .success-box {
     text-align: center;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 2rem 1rem;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dbdbdb;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #dbdbdb;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #fafafa;
+    color: #8a8a8a;
+    font-size: 0.85rem;
 }
