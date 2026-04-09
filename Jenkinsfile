@@ -1,14 +1,9 @@
 pipeline {
     agent any
-
-    tools {
-        maven 'maven-3.8.6'  // Adjust to your Maven installation name in Jenkins
-    }
-
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                https://github.com/dataquaintacademy/buildproject.git
             }
         }
 
