@@ -20,19 +20,19 @@
             <div class="card">
                 <c:choose>
                     <c:when test="${product.category == 'Electronics'}">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&q=80" alt="${product.name}" class="product-image">
+                        <img src="${pageContext.request.contextPath}/images/electronics.jpg" alt="${product.name}" class="product-image">
                     </c:when>
                     <c:when test="${product.category == 'Footwear'}">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&q=80" alt="${product.name}" class="product-image">
+                        <img src="${pageContext.request.contextPath}/images/footwear.jpg" alt="${product.name}" class="product-image">
                     </c:when>
                     <c:when test="${product.category == 'Accessories'}">
-                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop&q=80" alt="${product.name}" class="product-image">
+                        <img src="${pageContext.request.contextPath}/images/accessories.jpg" alt="${product.name}" class="product-image">
                     </c:when>
                     <c:when test="${product.category == 'Lifestyle'}">
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=400&fit=crop&q=80" alt="${product.name}" class="product-image">
+                        <img src="${pageContext.request.contextPath}/images/lifestyle.jpg" alt="${product.name}" class="product-image">
                     </c:when>
                     <c:otherwise>
-                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=400&fit=crop&q=80" alt="${product.name}" class="product-image">
+                        <img src="${pageContext.request.contextPath}/images/default.jpg" alt="${product.name}" class="product-image">
                     </c:otherwise>
                 </c:choose>
                 <h2>${product.name}</h2>
