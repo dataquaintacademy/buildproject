@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Thermal bottle illustration">
+  <rect width="400" height="280" rx="24" fill="#f0f9ff"/>
+  <rect x="165" y="70" width="70" height="170" rx="28" fill="#bae6fd" stroke="#0284c7" stroke-width="10"/>
+  <rect x="175" y="45" width="50" height="40" rx="18" fill="#dbeafe" stroke="#0284c7" stroke-width="8"/>
+  <line x1="185" y1="90" x2="235" y2="90" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M185 130 q25 -20 45 0" fill="none" stroke="#0ea5e9" stroke-width="8"/>
+  <text x="200" y="250" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#035388">Thermal</text>
+</svg>

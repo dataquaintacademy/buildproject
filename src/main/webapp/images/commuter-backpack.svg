@@ -1,0 +1,7 @@
+<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commuter backpack illustration">
+  <rect width="400" height="280" rx="24" fill="#eef2ff"/>
+  <path d="M140 80 h120 a40 40 0 0 1 40 40 v120 a40 40 0 0 1 -40 40 h-120 a40 40 0 0 1 -40 -40 v-120 a40 40 0 0 1 40 -40 z" fill="#c7d2fe" stroke="#4338ca" stroke-width="12"/>
+  <rect x="170" y="130" width="60" height="50" rx="12" fill="#e0e7ff" stroke="#4338ca" stroke-width="8"/>
+  <path d="M160 95 q40 -45 80 0" fill="none" stroke="#4338ca" stroke-width="10"/>
+  <text x="200" y="250" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#312e81">Backpack</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yoga mat set illustration">
+  <rect width="400" height="280" rx="24" fill="#eef2ff"/>
+  <rect x="100" y="100" width="200" height="120" rx="20" fill="#c7d2fe" stroke="#4338ca" stroke-width="10"/>
+  <line x1="120" y1="120" x2="280" y2="130" stroke="#6366f1" stroke-width="10" stroke-linecap="round"/>
+  <line x1="120" y1="150" x2="280" y2="160" stroke="#6366f1" stroke-width="10" stroke-linecap="round"/>
+  <line x1="120" y1="180" x2="280" y2="190" stroke="#6366f1" stroke-width="10" stroke-linecap="round"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#312e81">Yoga Set</text>
+</svg>
