@@ -15,21 +15,41 @@
         <a class="button-link" href="${pageContext.request.contextPath}/cart">🛍️ View Cart</a>
     </header>
 
+    <section class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow">Welcome to InstaShop</p>
+            <h2>Curated essentials for everyday life</h2>
+            <p>Discover modern gear, stylish accessories, and smart essentials chosen to make every day easier and more enjoyable.</p>
+        </div>
+    </section>
+
     <div class="product-grid">
         <c:forEach items="${products}" var="product">
             <div class="card">
                 <c:choose>
-                    <c:when test="${product.category == 'Electronics'}">
-                        <img src="${pageContext.request.contextPath}/images/electronics.jpg" alt="${product.name}" class="product-image">
+                    <c:when test="${product.name == 'Trail Running Shoes'}">
+                        <img src="${pageContext.request.contextPath}/images/trail-running-shoes.svg" alt="${product.name}" class="product-image">
                     </c:when>
-                    <c:when test="${product.category == 'Footwear'}">
-                        <img src="${pageContext.request.contextPath}/images/footwear.jpg" alt="${product.name}" class="product-image">
+                    <c:when test="${product.name == 'Commuter Backpack'}">
+                        <img src="${pageContext.request.contextPath}/images/commuter-backpack.svg" alt="${product.name}" class="product-image">
                     </c:when>
-                    <c:when test="${product.category == 'Accessories'}">
-                        <img src="${pageContext.request.contextPath}/images/accessories.jpg" alt="${product.name}" class="product-image">
+                    <c:when test="${product.name == 'Thermal Bottle'}">
+                        <img src="${pageContext.request.contextPath}/images/thermal-bottle.svg" alt="${product.name}" class="product-image">
                     </c:when>
-                    <c:when test="${product.category == 'Lifestyle'}">
-                        <img src="${pageContext.request.contextPath}/images/lifestyle.jpg" alt="${product.name}" class="product-image">
+                    <c:when test="${product.name == 'Wireless Earbuds'}">
+                        <img src="${pageContext.request.contextPath}/images/wireless-earbuds.svg" alt="${product.name}" class="product-image">
+                    </c:when>
+                    <c:when test="${product.name == 'Premium Leather Wallet'}">
+                        <img src="${pageContext.request.contextPath}/images/premium-leather-wallet.svg" alt="${product.name}" class="product-image">
+                    </c:when>
+                    <c:when test="${product.name == 'Sports Watch'}">
+                        <img src="${pageContext.request.contextPath}/images/sports-watch.svg" alt="${product.name}" class="product-image">
+                    </c:when>
+                    <c:when test="${product.name == 'Canvas Sneakers'}">
+                        <img src="${pageContext.request.contextPath}/images/canvas-sneakers.svg" alt="${product.name}" class="product-image">
+                    </c:when>
+                    <c:when test="${product.name == 'Yoga Mat Set'}">
+                        <img src="${pageContext.request.contextPath}/images/yoga-mat-set.svg" alt="${product.name}" class="product-image">
                     </c:when>
                     <c:otherwise>
                         <img src="${pageContext.request.contextPath}/images/default.jpg" alt="${product.name}" class="product-image">
