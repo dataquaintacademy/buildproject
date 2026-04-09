@@ -5,9 +5,7 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: linear-gradient(-45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #f09433);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background: #ffffff;
     color: #262626;
     font-size: 1.1rem;
 }
@@ -38,10 +36,7 @@ h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f09433;
     letter-spacing: -0.5px;
 }
 
@@ -154,7 +149,7 @@ textarea:focus {
 button,
 .button-link {
     cursor: pointer;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: #f09433;
     border-color: transparent;
     color: #ffffff;
     text-decoration: none;
@@ -166,7 +161,7 @@ button,
 
 button:hover,
 .button-link:hover {
-    background: linear-gradient(45deg, #e8872a 0%, #d55a32 25%, #c92239 50%, #b91f5c 75%, #a9167e 100%);
+    background: #e8872a;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
 }
@@ -186,7 +181,7 @@ table {
 }
 
 th {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: #f09433;
     color: #ffffff;
     text-align: left;
     padding: 1rem 0.75rem;
@@ -219,17 +214,7 @@ tr:hover {
     border-left: 4px solid #f09433;
 }
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
 
 .checkout-form {
     background: #ffffff;
