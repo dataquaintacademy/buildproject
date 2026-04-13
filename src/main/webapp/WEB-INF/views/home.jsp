@@ -64,7 +64,7 @@
                 <h2>${product.name}</h2>
                 <p class="category">${product.category}</p>
                 <p>${product.description}</p>
-                <p class="price">$ ${product.price}</p>
+                <p class="price">${product.price} dollars</p>
                 <form method="post" action="${pageContext.request.contextPath}/cart/add">
                     <input type="hidden" name="productId" value="${product.id}">
                     <label>

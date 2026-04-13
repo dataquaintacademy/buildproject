@@ -37,12 +37,12 @@
                     <tr>
                         <td>${item.product.name}</td>
                         <td>${item.quantity}</td>
-                        <td>$ ${item.lineTotal}</td>
+                        <td>${item.lineTotal} dollars</td>
                     </tr>
                 </c:forEach>
                 </tbody>
             </table>
-            <p class="total">💰 Total: $ ${cartTotal}</p>
+            <p class="total">💰 Total: ${cartTotal} dollars</p>
             <a class="button-link" href="${pageContext.request.contextPath}/checkout">Proceed to Checkout →</a>
         </c:otherwise>
     </c:choose>
