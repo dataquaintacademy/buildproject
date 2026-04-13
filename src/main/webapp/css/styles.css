@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: radial-gradient(circle at top, #dbeafe 0%, #f8fafc 38%, #ffffff 100%);
+    background: #ffffff;
     color: #0f172a;
     font-size: 1rem;
     line-height: 1.6;
@@ -18,37 +18,16 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(56, 189, 248, 0.92));
+    background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%);
     border-radius: 28px;
     padding: 2rem;
     margin-bottom: 1.75rem;
-    box-shadow: 0 24px 80px rgba(56, 189, 248, 0.18);
+    box-shadow: 0 24px 80px rgba(37, 99, 235, 0.18);
     color: #ffffff;
 }
 
-.hero-grid {
-    display: grid;
-    gap: 2rem;
-    align-items: center;
-    grid-template-columns: 1.3fr 0.9fr;
-}
-
 .hero-copy {
-    max-width: 640px;
-}
-
-.hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-visual img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 28px;
-    border: 4px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16);
+    max-width: 680px;
 }
 
 .eyebrow {
