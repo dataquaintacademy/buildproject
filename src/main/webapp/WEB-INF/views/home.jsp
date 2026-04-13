@@ -19,8 +19,8 @@
         <div class="hero-copy">
             <p class="eyebrow">Welcome to InstaShop</p>
             <h2>Curated essentials for everyday life</h2>
-            <p>Discover modern gear, stylish accessories, and smart essentials chosen to make every day easier and more enjoyable.</p>
-            <p>Fresh new arrivals, bold style, and fast checkout are just a click away.</p>
+            <p>Discover modern gear, colorful accessories, and fresh essentials designed to fit your everyday style.</p>
+            <p>Shop the look with an Instagram-inspired shopping experience that feels bright, bold, and effortless.</p>
         </div>
     </section>
 
