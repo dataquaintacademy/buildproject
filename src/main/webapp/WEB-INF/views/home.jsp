@@ -16,10 +16,16 @@
     </header>
 
     <section class="hero">
-        <div class="hero-copy">
-            <p class="eyebrow">Welcome to InstaShop</p>
-            <h2>Curated essentials for everyday life</h2>
-            <p>Discover modern gear, stylish accessories, and smart essentials chosen to make every day easier and more enjoyable.</p>
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Welcome to InstaShop</p>
+                <h2>Curated essentials for everyday life</h2>
+                <p>Discover modern gear, stylish accessories, and smart essentials chosen to make every day easier and more enjoyable.</p>
+                <p>Fresh new arrivals, bold style, and fast checkout are just a click away.</p>
+            </div>
+            <div class="hero-visual">
+                <img src="${pageContext.request.contextPath}/images/lifestyle.jpg" alt="Vibrant shopping collection">
+            </div>
         </div>
     </section>
 
@@ -58,7 +64,7 @@
                 <h2>${product.name}</h2>
                 <p class="category">${product.category}</p>
                 <p>${product.description}</p>
-                <p class="price">₹ ${product.price}</p>
+                <p class="price">$ ${product.price}</p>
                 <form method="post" action="${pageContext.request.contextPath}/cart/add">
                     <input type="hidden" name="productId" value="${product.id}">
                     <label>

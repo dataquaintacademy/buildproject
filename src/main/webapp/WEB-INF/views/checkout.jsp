@@ -38,7 +38,7 @@
                     <textarea name="address" rows="4" placeholder="Enter your complete address" required></textarea>
                 </label>
 
-                <p class="total">💰 Order Total: ₹ ${cartTotal}</p>
+                <p class="total">💰 Order Total: $ ${cartTotal}</p>
                 <button type="submit">✓ Place Order</button>
             </form>
         </c:otherwise>
