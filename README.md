@@ -1,4 +1,4 @@
-# 📦 Java WAR Build & Deployment Pipeline
+# 📦 Java WAR Build & Deployment Pipeline for the application Instamart
 
 This project demonstrates a complete CI/CD pipeline for a Java-based application that generates a **WAR (Web Application Archive)** artifact. The pipeline covers compilation, testing, code quality analysis, security scanning, packaging, and deployment to a repository.
 
