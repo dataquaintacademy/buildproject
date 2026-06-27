@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-git branch: 'main', url: 'https://github.com/dataquaintacademy/buildproject.git'
+git branch: 'feature3', url: 'https://github.com/dataquaintacademy/buildproject.git'
             }
         }
         stage("build")
