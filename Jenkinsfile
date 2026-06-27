@@ -21,7 +21,7 @@ git branch: 'feature1', url: 'https://github.com/dataquaintacademy/buildproject.
         {
             steps
             {
-                sh 'sudo cp /var/lib/jenkins/workspace/declarative/target/ecommerce-platform-1.0.0-SNAPSHOT.war /var/lib/tomcat10/webapps/devapp1.war'
+                sh 'sudo cp /var/lib/jenkins/workspace/multibranchproject_feature1/target/ecommerce-platform-1.0.0-SNAPSHOT.war /var/lib/tomcat10/webapps/devapp1.war'
             }
         }
     }
