@@ -1,46 +1,28 @@
-pipeline {
+pipeline
+{
     agent any
-    stages {
-        stage('Checkout') {
-            steps {
-                https://github.com/dataquaintacademy/buildproject.git
+    stages
+    {
+        stage("checkout_Source_Code")
+        {
+            steps
+            {
+git branch: 'main', url: 'https://github.com/dataquaintacademy/buildproject.git'
             }
         }
-
-        stage('Build') {
-            steps {
-                sh 'mvn compile'
+        stage("build")
+        {
+            steps
+            {
+                sh 'mvn package'
             }
         }
-
-        stage('Test') {
-            steps {
-                sh 'mvn test'
+        stage("deploy")
+        {
+            steps
+            {
+                sh 'sudo cp /var/lib/jenkins/workspace/declarative/target/ecommerce-platform-1.0.0-SNAPSHOT.war /var/lib/tomcat10/webapps/app.war'
             }
-        }
-
-        stage('Package') {
-            steps {
-                sh 'mvn clean package'
-            }
-        }
-
-        stage('Archive') {
-            steps {
-                archiveArtifacts artifacts: 'target/*.war', fingerprint: true
-            }
-        }
-    }
-
-    post {
-        always {
-            junit 'target/surefire-reports/*.xml'
-        }
-        success {
-            echo 'Build and tests passed!'
-        }
-        failure {
-            echo 'Build or tests failed.'
         }
     }
 }
