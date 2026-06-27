@@ -5,22 +5,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InstaShop - Shop Like Never Before</title>
+    <title>Premium Shop - Quality Products at Great Prices</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/styles.css">
 </head>
 <body>
 <div class="container">
     <header>
-        <h1>InstaShop</h1>
-        <a class="button-link" href="${pageContext.request.contextPath}/cart">🛍️ View Cart</a>
+        <h1>Premium Shop</h1>
+        <a class="button-link" href="${pageContext.request.contextPath}/cart">View Cart</a>
     </header>
 
     <section class="hero">
         <div class="hero-copy">
-            <p class="eyebrow">Welcome to InstaShop</p>
-            <h2>Curated essentials for everyday life</h2>
-            <p>Discover modern gear, colorful accessories, and fresh essentials designed to fit your everyday style.</p>
-            <p>Shop the look with an Instagram-inspired shopping experience that feels bright, bold, and effortless.</p>
+            <p class="eyebrow">Welcome to Premium Shop</p>
+            <h2>Quality products you can trust</h2>
+            <p>Discover our carefully curated selection of premium gear, accessories, and essentials.</p>
+            <p>Shop with confidence knowing you're getting the best value and quality products.</p>
         </div>
     </section>
 
@@ -73,7 +73,7 @@
     </div>
 </div>
 <footer>
-    <p>&copy; 2026 InstaShop. All rights reserved. | Fast Delivery | Secure Payment</p>
+    <p>&copy; 2026 Premium Shop. All rights reserved. | Fast Delivery | Secure Payment</p>
 </footer>
 </body>
 </html>

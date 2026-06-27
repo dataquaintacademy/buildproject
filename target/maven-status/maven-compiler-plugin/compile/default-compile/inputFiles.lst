@@ -1,0 +1,10 @@
+/workspaces/buildproject/src/main/java/com/ecommerce/model/CartItem.java
+/workspaces/buildproject/src/main/java/com/ecommerce/model/Product.java
+/workspaces/buildproject/src/main/java/com/ecommerce/service/CartService.java
+/workspaces/buildproject/src/main/java/com/ecommerce/service/ProductCatalog.java
+/workspaces/buildproject/src/main/java/com/ecommerce/web/AddToCartServlet.java
+/workspaces/buildproject/src/main/java/com/ecommerce/web/CartServlet.java
+/workspaces/buildproject/src/main/java/com/ecommerce/web/CartSessionUtil.java
+/workspaces/buildproject/src/main/java/com/ecommerce/web/CheckoutServlet.java
+/workspaces/buildproject/src/main/java/com/ecommerce/web/HomeServlet.java
+/workspaces/buildproject/src/main/java/com/ecommerce/web/OrderSuccessServlet.java
