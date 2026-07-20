@@ -25,4 +25,20 @@ class CartServiceTest {
         assertEquals(3, cart.get(0).getQuantity());
         assertEquals(new BigDecimal("149.97"), cartService.calculateTotal(cart));
     }
+
+    @Test
+    void shouldRemoveItemFromCartByProductId() {
+        CartService cartService = new CartService();
+        List<CartItem> cart = new ArrayList<>();
+        Product keyboard = new Product(1, "Keyboard", "Electronics", new BigDecimal("49.99"), "Mechanical keyboard");
+        Product mouse = new Product(2, "Mouse", "Electronics", new BigDecimal("29.99"), "Wireless mouse");
+
+        cartService.addProduct(cart, keyboard, 1);
+        cartService.addProduct(cart, mouse, 1);
+
+        cartService.removeProduct(cart, 1);
+
+        assertEquals(1, cart.size());
+        assertEquals("Mouse", cart.get(0).getProduct().getName());
+    }
 }
