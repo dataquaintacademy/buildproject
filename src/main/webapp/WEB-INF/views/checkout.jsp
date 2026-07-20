@@ -34,7 +34,11 @@
                     <input type="email" name="email" placeholder="Enter your email" required>
                 </label>
                 <label>
-                    📍 Shipping Address
+                    � Mobile Number
+                    <input type="tel" name="mobileNumber" placeholder="Enter your mobile number" required>
+                </label>
+                <label>
+                    �📍 Shipping Address
                     <textarea name="address" rows="4" placeholder="Enter your complete address" required></textarea>
                 </label>
 
