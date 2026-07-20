@@ -26,6 +26,10 @@ public class CartService {
         cart.add(new CartItem(product, quantity));
     }
 
+    public void removeProduct(List<CartItem> cart, int productId) {
+        cart.removeIf(item -> item.getProduct().getId() == productId);
+    }
+
     public BigDecimal calculateTotal(List<CartItem> cart) {
         return cart.stream()
             .map(CartItem::getLineTotal)

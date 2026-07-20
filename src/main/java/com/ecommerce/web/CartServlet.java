@@ -23,4 +23,23 @@ public class CartServlet extends HttpServlet {
         request.setAttribute("cartTotal", cartService.calculateTotal(cart));
         request.getRequestDispatcher("/WEB-INF/views/cart.jsp").forward(request, response);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        List<CartItem> cart = CartSessionUtil.getOrCreateCart(request.getSession());
+        String action = request.getParameter("action");
+
+        if ("delete".equals(action)) {
+            String productId = request.getParameter("productId");
+            try {
+                cartService.removeProduct(cart, Integer.parseInt(productId));
+            } catch (NumberFormatException ignored) {
+                // Ignore invalid product ids and keep the cart unchanged.
+            }
+        }
+
+        request.setAttribute("cartItems", cart);
+        request.setAttribute("cartTotal", cartService.calculateTotal(cart));
+        request.getRequestDispatcher("/WEB-INF/views/cart.jsp").forward(request, response);
+    }
 }
