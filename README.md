@@ -10,6 +10,8 @@ This project demonstrates a complete CI/CD pipeline for a Java-based application
 ## 🚀 Project Overview
 
 The goal of this project is to automate the end-to-end build and deployment lifecycle of a Java web application using modern DevOps tools and best practices.
+The goal of this project is to automate the end-to-end build and deployment lifecycle of a Java web application using modern DevOps tools and best practices.
+
 
 ### 🔧 Pipeline Stages
 
