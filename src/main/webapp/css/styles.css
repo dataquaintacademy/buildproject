@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
 }
@@ -5,8 +6,11 @@
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: linear-gradient(135deg, #f5fbff 0%, #fff9f1 45%, #fef3e2 100%);
-    color: #1f3b64;
+    background:
+        radial-gradient(circle at 20% 10%, rgba(220, 38, 38, 0.18), transparent 25%),
+        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.18), transparent 25%),
+        linear-gradient(135deg, #050505 0%, #0b1020 45%, #111827 100%);
+    color: #f8fafc;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -18,37 +22,77 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 45%, #f59e0b 100%);
-    border-radius: 28px;
-    padding: 2.25rem;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(185, 28, 28, 0.98) 0%, rgba(220, 38, 38, 0.96) 45%, rgba(17, 24, 39, 0.98) 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
     margin-bottom: 1.75rem;
-    box-shadow: 0 28px 100px rgba(37, 99, 235, 0.16);
+    box-shadow:
+        0 25px 70px rgba(220, 38, 38, 0.25),
+        inset 0 0 60px rgba(0, 0, 0, 0.2);
     color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Spider-web decorative effect */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    pointer-events: none;
+}
+
+.hero::before {
+    top: -120px;
+    right: -80px;
+    box-shadow:
+        0 0 0 25px transparent,
+        0 0 0 27px rgba(255, 255, 255, 0.08),
+        0 0 0 55px transparent,
+        0 0 0 57px rgba(255, 255, 255, 0.06),
+        0 0 0 85px transparent,
+        0 0 0 87px rgba(255, 255, 255, 0.05);
+}
+
+.hero::after {
+    bottom: -170px;
+    left: -120px;
 }
 
 .hero-copy {
     max-width: 680px;
+    position: relative;
+    z-index: 2;
 }
 
 .eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 700;
+    color: #fecaca;
+    font-weight: 800;
     margin: 0 0 0.75rem;
     font-size: 0.82rem;
 }
 
 .hero h2 {
     margin: 0;
-    font-size: clamp(2rem, 2.5vw, 3.2rem);
+    font-size: clamp(2rem, 5vw, 3.8rem);
     color: #ffffff;
     line-height: 1.05;
+    text-shadow:
+        3px 3px 0 #111827,
+        5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
     margin: 1rem 0 0;
-    color: rgba(255, 255, 255, 0.92);
+    color: #fee2e2;
     font-size: 1rem;
 }
 
@@ -57,7 +101,10 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 55%, #fb923c 100%);
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, #050505 0%, #111827 50%, #991b1b 100%);
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -65,20 +112,37 @@ header {
     gap: 1rem;
     margin: -2rem -1rem 2rem -1rem;
     padding: 1.25rem 2rem;
-    border-radius: 0 0 28px 28px;
-    box-shadow: 0 20px 48px rgba(37, 99, 235, 0.18);
+    border-radius: 0 0 22px 22px;
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.45),
+        0 4px 0 #dc2626;
+}
+
+/* Header web lines */
+header::after {
+    content: "╲  ╱  ╲  ╱  ╲  ╱  ╲  ╱";
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.07);
+    pointer-events: none;
 }
 
 h1 {
     margin: 0;
     font-size: 1.9rem;
-    font-weight: 800;
+    font-weight: 900;
     color: #ffffff;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    text-shadow:
+        2px 2px 0 #dc2626,
+        4px 4px 0 #000000;
 }
 
 h1::before {
-    content: '🛍️ ';
+    content: '🕷️ ';
     margin-right: 0.5rem;
 }
 
@@ -90,59 +154,99 @@ h1::before {
 }
 
 .card {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(239, 246, 255, 0.95) 100%);
-    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(145deg, rgba(17, 24, 39, 0.98), rgba(3, 7, 18, 0.98));
+    border-radius: 18px;
     padding: 1.5rem;
-    box-shadow: 0 22px 48px rgba(37, 99, 235, 0.12);
-    border: 1px solid rgba(37, 99, 235, 0.14);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.45),
+        0 0 0 1px rgba(220, 38, 38, 0.25);
+    border: 1px solid rgba(220, 38, 38, 0.35);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
     display: flex;
     flex-direction: column;
+}
+
+/* Web decoration on cards */
+.card::before {
+    content: "✦";
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 2rem;
+    color: rgba(220, 38, 38, 0.15);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -70px;
+    right: -70px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        0 0 0 18px transparent,
+        0 0 0 19px rgba(255, 255, 255, 0.05),
+        0 0 0 38px transparent,
+        0 0 0 39px rgba(255, 255, 255, 0.04);
+    pointer-events: none;
 }
 
 .product-image {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 14px;
     margin-bottom: 1rem;
-    background-color: #ffffff;
+    background-color: #020617;
+    border: 2px solid rgba(220, 38, 38, 0.4);
 }
 
 .card:hover {
-    box-shadow: 0 30px 70px rgba(37, 99, 235, 0.18);
-    transform: translateY(-4px);
-    border-color: rgba(37, 99, 235, 0.28);
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(220, 38, 38, 0.2);
+    transform: translateY(-6px);
+    border-color: #ef4444;
 }
 
 .card h2 {
     margin: 0.5rem 0;
     font-size: 1.4rem;
-    font-weight: 700;
-    color: #2d0b4d;
+    font-weight: 800;
+    color: #ffffff;
     line-height: 1.4;
 }
 
 .category {
-    color: #2563eb;
-    font-size: 0.9rem;
+    color: #ef4444;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin: 0.25rem 0;
+    font-weight: 800;
 }
 
 .card p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #3b82f6;
+    color: #cbd5e1;
     flex-grow: 1;
 }
 
 .price {
     font-size: 1.55rem;
-    font-weight: 800;
-    color: #f59e0b;
+    font-weight: 900;
+    color: #f87171;
     margin: 0.75rem 0;
+    text-shadow: 1px 1px 0 #000000;
 }
 
 form {
@@ -154,49 +258,71 @@ label {
     display: grid;
     gap: 0.5rem;
     font-size: 0.95rem;
-    font-weight: 600;
-    color: #1d4ed8;
+    font-weight: 700;
+    color: #fecaca;
 }
 
 input,
 textarea,
 button,
 .button-link {
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    border: 1px solid #334155;
     font-size: 1rem;
     padding: 0.75rem 1rem;
     font-family: inherit;
     transition: all 0.2s ease;
 }
 
+input,
+textarea {
+    background: #020617;
+    color: #f8fafc;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #64748b;
+}
+
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.16);
+    border-color: #ef4444;
+    box-shadow:
+        0 0 0 2px rgba(239, 68, 68, 0.18),
+        0 0 15px rgba(239, 68, 68, 0.12);
 }
 
 button,
 .button-link {
     cursor: pointer;
-    background: linear-gradient(135deg, #fb923c 0%, #f59e0b 45%, #2563eb 100%);
-    border-color: transparent;
+    background:
+        linear-gradient(135deg, #dc2626 0%, #ef4444 55%, #991b1b 100%);
+    border-color: #ef4444;
     color: #ffffff;
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    font-weight: 700;
+    font-weight: 800;
     border-radius: 999px;
     padding: 0.8rem 1.15rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-    box-shadow: 0 16px 36px rgba(37, 99, 235, 0.16);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+    box-shadow:
+        0 10px 25px rgba(220, 38, 38, 0.25),
+        inset 0 1px rgba(255, 255, 255, 0.12);
 }
 
 button:hover,
 .button-link:hover {
-    background: linear-gradient(135deg, #1d4ed8 0%, #f59e0b 55%, #fb923c 100%);
-    box-shadow: 0 20px 44px rgba(37, 99, 235, 0.24);
+    background:
+        linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #ef4444 100%);
+    box-shadow:
+        0 15px 35px rgba(220, 38, 38, 0.4),
+        0 0 20px rgba(239, 68, 68, 0.15);
     transform: translateY(-2px);
 }
 
@@ -205,11 +331,14 @@ button:active {
 }
 
 .cart-panel {
-    background: rgba(255, 255, 255, 0.97);
-    border-radius: 28px;
+    background:
+        linear-gradient(145deg, rgba(17, 24, 39, 0.98), rgba(3, 7, 18, 0.98));
+    border-radius: 20px;
     padding: 1.5rem;
-    border: 1px solid rgba(37, 99, 235, 0.14);
-    box-shadow: 0 24px 56px rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(220, 38, 38, 0.35);
+    box-shadow:
+        0 24px 56px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(220, 38, 38, 0.05);
 }
 
 .cart-card-header {
@@ -222,26 +351,27 @@ button:active {
 }
 
 .cart-card-header .eyebrow {
-    color: #2563eb;
+    color: #ef4444;
     margin-bottom: 0.3rem;
 }
 
 .cart-panel-title {
     margin: 0;
     font-size: 1.35rem;
-    color: #1d4ed8;
+    color: #ffffff;
 }
 
 .cart-pill {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: #eff6ff;
-    color: #1d4ed8;
+    background: #450a0a;
+    color: #fecaca;
     padding: 0.45rem 0.8rem;
     border-radius: 999px;
     font-size: 0.92rem;
-    font-weight: 700;
+    font-weight: 800;
+    border: 1px solid rgba(239, 68, 68, 0.35);
 }
 
 .cart-table {
@@ -254,19 +384,21 @@ button:active {
 }
 
 .cart-table th {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    background:
+        linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
     color: #ffffff;
     text-align: left;
     padding: 0.95rem 0.85rem;
-    font-weight: 600;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    font-weight: 700;
+    border-bottom: 2px solid #ef4444;
 }
 
 .cart-table td {
     text-align: left;
     padding: 1rem 0.85rem;
-    border-bottom: 1px solid rgba(37, 99, 235, 0.12);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
     vertical-align: middle;
+    color: #cbd5e1;
 }
 
 .cart-table tr:last-child td {
@@ -274,17 +406,17 @@ button:active {
 }
 
 .cart-table tr:hover {
-    background: rgba(239, 246, 255, 0.8);
+    background: rgba(127, 29, 29, 0.18);
 }
 
 .cart-item-name {
-    font-weight: 700;
-    color: #1d4ed8;
+    font-weight: 800;
+    color: #ffffff;
 }
 
 .cart-price {
-    color: #f59e0b;
-    font-weight: 700;
+    color: #f87171;
+    font-weight: 800;
 }
 
 .inline-form {
@@ -295,14 +427,16 @@ button:active {
 
 .delete-btn {
     padding: 0.6rem 0.9rem;
-    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    background:
+        linear-gradient(135deg, #450a0a 0%, #991b1b 100%);
     color: #ffffff;
-    border: none;
-    box-shadow: 0 12px 26px rgba(239, 68, 68, 0.2);
+    border: 1px solid #dc2626;
+    box-shadow: 0 8px 20px rgba(127, 29, 29, 0.3);
 }
 
 .delete-btn:hover {
-    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    background:
+        linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%);
     transform: translateY(-1px);
 }
 
@@ -322,91 +456,120 @@ button:active {
 }
 
 .button-link.secondary {
-    background: linear-gradient(135deg, #eff6ff 0%, #fef3e2 100%);
-    color: #1d4ed8;
-    border: 1px solid rgba(37, 99, 235, 0.18);
+    background:
+        linear-gradient(135deg, #111827 0%, #1e293b 100%);
+    color: #fecaca;
+    border: 1px solid rgba(239, 68, 68, 0.35);
     box-shadow: none;
 }
 
 .button-link.secondary:hover {
-    background: linear-gradient(135deg, #dbeafe 0%, #fde68a 100%);
+    background:
+        linear-gradient(135deg, #1e293b 0%, #450a0a 100%);
+    border-color: #ef4444;
 }
 
 .total {
     font-size: 1.25rem;
-    font-weight: 700;
-    color: #1e3a8a;
+    font-weight: 800;
+    color: #ffffff;
     margin: 0;
     padding: 0.9rem 1rem;
-    background: rgba(59, 130, 246, 0.12);
+    background:
+        linear-gradient(135deg, rgba(127, 29, 29, 0.45), rgba(30, 41, 59, 0.8));
     border-radius: 999px;
-    border-left: 4px solid #f59e0b;
+    border-left: 4px solid #ef4444;
 }
 
 footer {
     text-align: center;
     margin-top: 2rem;
-    color: #1d4ed8;
+    color: #94a3b8;
     font-size: 0.95rem;
-    background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+    background:
+        linear-gradient(135deg, #020617 0%, #111827 100%);
     padding: 1.5rem 1rem;
-    border-top: 1px solid rgba(37, 99, 235, 0.14);
+    border-top: 2px solid rgba(220, 38, 38, 0.35);
 }
 
 .success-box {
-    background: linear-gradient(180deg, rgba(219, 234, 254, 0.35) 0%, rgba(255, 255, 255, 0.95) 100%);
+    background:
+        linear-gradient(145deg, rgba(127, 29, 29, 0.35), rgba(17, 24, 39, 0.98));
     padding: 2.5rem;
-    border-radius: 24px;
-    box-shadow: 0 24px 60px rgba(37, 99, 235, 0.12);
+    border-radius: 20px;
+    box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(220, 38, 38, 0.08);
     text-align: center;
+    border: 1px solid rgba(239, 68, 68, 0.35);
 }
 
 .empty-message {
-    background: rgba(255, 255, 255, 0.95);
+    background:
+        linear-gradient(145deg, rgba(17, 24, 39, 0.98), rgba(3, 7, 18, 0.98));
     padding: 2.25rem;
-    border-radius: 24px;
-    border: 1px solid rgba(37, 99, 235, 0.14);
+    border-radius: 20px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
     text-align: center;
-    box-shadow: 0 24px 60px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
 
 .empty-message h2 {
-    color: #1d4ed8;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .empty-message p {
-    color: #3b82f6;
+    color: #94a3b8;
     margin-bottom: 1rem;
 }
 
 .checkout-form {
     display: grid;
     gap: 1.25rem;
-    background: rgba(255, 255, 255, 0.98);
+    background:
+        linear-gradient(145deg, rgba(17, 24, 39, 0.98), rgba(3, 7, 18, 0.98));
     padding: 2rem;
-    border-radius: 24px;
-    box-shadow: 0 24px 60px rgba(37, 99, 235, 0.1);
-    border: 1px solid rgba(37, 99, 235, 0.16);
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .success-box h2 {
-    color: #1d4ed8;
+    color: #ffffff;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
 .success-box p {
-    color: #3b82f6;
+    color: #cbd5e1;
     font-size: 1.05rem;
     margin-bottom: 1rem;
 }
 
+/* Spider-Man themed divider */
+hr {
+    border: 0;
+    height: 3px;
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #dc2626,
+            #ffffff,
+            #dc2626,
+            transparent
+        );
+    margin: 2rem 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         gap: 1rem;
+        text-align: center;
     }
 
     .container {
@@ -419,7 +582,15 @@ footer {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.3rem;
     }
 
     .total {
@@ -449,13 +620,41 @@ input[type="number"] {
     width: 100px;
 }
 
-/* Discount/promo styles */
+/* Discount / Promo */
 .discount {
-    background: #ffb800;
-    color: #1f42a8;
-    padding: 0.25rem 0.5rem;
-    border-radius: 3px;
+    background:
+        linear-gradient(135deg, #dc2626, #991b1b);
+    color: #ffffff;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 800;
     display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.25);
 }
+
+/* Spider-Man accent selection */
+::selection {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#dc2626, #991b1b);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ef4444;
+}
+```
