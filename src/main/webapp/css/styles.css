@@ -75,14 +75,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #fecaca;
-    font-weight: 800;
+    font-weight: 1000;
     margin: 0 0 0.75rem;
     font-size: 0.82rem;
 }
 
 .hero h2 {
     margin: 0;
-    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-size: clamp(5rem, 5vw, 3.8rem);
     color: #ffffff;
     line-height: 1.05;
     text-shadow:
@@ -93,7 +93,7 @@ body {
 .hero p {
     margin: 1rem 0 0;
     color: #fee2e2;
-    font-size: 1rem;
+    font-size: 5rem;
 }
 
 .container.narrow {
