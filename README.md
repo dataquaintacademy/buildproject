@@ -1,7 +1,7 @@
 # 01-08-2026 DevOps Project
-# Project Instructor : Govardhan
+# Project Instructor : Prashanth
 # 📦 Java WAR Build & Deployment Pipeline for the application Insta Shop application
-# New change on 11-08-2026 Tuesday
+# New change on 14-08-2026
 
 This project demonstrates a complete CI/CD pipeline for a Java-based application that generates a **WAR (Web Application Archive)** artifact. The pipeline covers compilation, testing, code quality analysis, security scanning, packaging, and deployment to a repository.
 
