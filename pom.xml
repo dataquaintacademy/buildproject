@@ -6,10 +6,10 @@
     <groupId>com.ecommerce</groupId
     <artifactId>ecom</artifactId
     <version>1.0.0</version
-    <packaging>war</packaging>
+    <packaging>war</packaging
 
-    <name>Ecommerce Platform</name>
-    <description>Simple Java ecommerce web application packaged as a WAR</description>
+    <name>Ecommerce Platform</name
+    <description>Simple Java ecommerce web application packaged as a WAR</description
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
