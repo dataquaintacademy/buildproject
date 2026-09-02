@@ -431,7 +431,7 @@ footer {
     background: rgba(238, 232, 255, 0.55);
     border-top: 2px solid var(--peach);
     font-family: "Trebuchet MS", sans-serif;
-    font-size: 5rem;
+    font-size: 1rem;
 }
 
 .success-box,
