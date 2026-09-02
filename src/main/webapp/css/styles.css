@@ -1,7 +1,7 @@
 :root {
-    --ink: #433b5c;
-    --muted: #7c748f;
-    --paper: #fffdfb;
+    --ink: ##FAEBE7;
+    --muted: #COCOCO;
+    --paper: #FAEBE7;
     --lavender: #eee8ff;
     --lavender-deep: #8d7ac4;
     --peach: #ffd9c7;
@@ -9,7 +9,7 @@
     --mint: #dff3e9;
     --butter: #fff1bf;
     --line: #e7deed;
-    --shadow: 0 18px 45px rgba(0, 50, 50, 1);
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
 }
 
 * {
