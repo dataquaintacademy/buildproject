@@ -1,5 +1,5 @@
 # 02-09-2026 DevOps Project
-# Project Instructor : Ankita
+# Project Instructor : Prashanth
 # 📦 Java WAR Build & Deployment Pipeline for the application Insta Shop 
 # New change on 31-08-2026
 
