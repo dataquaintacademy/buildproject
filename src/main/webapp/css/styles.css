@@ -65,8 +65,8 @@ header::after {
 h1 {
     margin: 0;
     color: var(--ink);
-    font-size: 5rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 300;
     letter-spacing: 0.02em;
 }
 
@@ -120,7 +120,7 @@ h1::before {
     color: var(--peach-deep);
     font-family: "Trebuchet MS", sans-serif;
     font-size: 0.78rem;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
@@ -128,7 +128,7 @@ h1::before {
 .hero h2 {
     margin: 0;
     color: var(--ink);
-    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    font-size: clamp(2.4rem, 5vw, 2.2rem);
     line-height: 1.05;
 }
 
@@ -215,7 +215,7 @@ h1::before {
 .price,
 .cart-price {
     color: var(--peach-deep);
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .price {
@@ -234,7 +234,7 @@ label {
     color: var(--ink);
     font-family: "Trebuchet MS", sans-serif;
     font-size: 0.92rem;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 input,
