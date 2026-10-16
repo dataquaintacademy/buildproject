@@ -21,14 +21,14 @@ body {
     color: var(--ink);
     background: linear-gradient(
         135deg,
-        rgba(0, 0, 255, 1) 0%,
-        rgba(0, 0, 180, 0.9) 15%,
+        rgba(255, 0, 255, 1) 0%,
+        rgba(255, 0, 180, 0.9) 15%,
         transparent 40%
     ),
     linear-gradient(
         225deg,
-        rgba(0, 255, 255, 1) 0%,
-        rgba(0, 200, 255, 0.9) 15%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 200, 255, 0.9) 15%,
         transparent 40%
     ),
         #050510;
@@ -38,13 +38,13 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
 }
 
 .container.narrow {
-    max-width: 1040px;
+    max-width: 800px;
 }
 
 header {
