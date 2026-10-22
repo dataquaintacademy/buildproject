@@ -38,13 +38,13 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
 }
 
 .container.narrow {
-    max-width: 800px;
+    max-width: 10240px;
 }
 
 header {
@@ -80,7 +80,7 @@ h1 {
 }
 
 h1::before {
-    content: "InstaShop ";
+    content: "InstaMart";
     color: var(--peach-deep);
 }
 
