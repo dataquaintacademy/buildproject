@@ -21,8 +21,8 @@ body {
     color: var(--ink);
     background: linear-gradient(
         135deg,
-        rgba(255, 0, 255, 1) 0%,
-        rgba(255, 0, 180, 0.9) 15%,
+        rgba(0, 0, 255, 1) 0%,
+        rgba(0, 0, 180, 0.9) 15%,
         transparent 40%
     ),
     linear-gradient(
@@ -38,13 +38,13 @@ body {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
 }
 
 .container.narrow {
-    max-width: 10240px;
+    max-width: 1920px;
 }
 
 header {
