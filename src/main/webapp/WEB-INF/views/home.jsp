@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
-<html lang="en"><head>
+<html><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InstaShop - Shop Like Never Before</title>
@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <header>
-        <h1>InstaShop</h1>
+        <h1>InstaShop<
         <a class="button-link" href="${pageContext.request.contextPath}/cart">🛍️ View Cart</a>
     </header>
 
