@@ -50,13 +50,13 @@
     <!-- Nexus Repository Configuration -->
     <distributionManagement>
         <repository>
-            <id>nexus-releases</id>
+            <id>maven-releases</id>
             <name>Nexus Maven Releases</name>
             <url>http://13.55.127.115:8081/repository/maven-releases/</url>
         </repository>
 
         <snapshotRepository>
-            <id>nexus-snapshots</id>
+            <id>maven-snapshots</id>
             <name>Nexus Maven Snapshots</name>
             <url>http://13.55.127.115:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
