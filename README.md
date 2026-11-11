@@ -1,5 +1,5 @@
 # 02-09-2026 DevOps Pipeline Project
-# Project Instructor : Vijay Bhaskar
+# Project Instructor : Harsh
 # 📦 Java WAR Build & Deployment Pipeline for the application Insta Shop 2026
 # New change on 31-08-2026
 
