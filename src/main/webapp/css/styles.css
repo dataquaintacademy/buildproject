@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
 }
@@ -74,8 +74,8 @@ header::after {
 h1 {
     margin: 0;
     color: var(--ink);
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.5rem;
+    font-weight: 100;
     letter-spacing: 0.02em;
 }
 
@@ -129,7 +129,7 @@ h1::before {
     color: var(--peach-deep);
     font-family: "Trebuchet MS", sans-serif;
     font-size: 0.78rem;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
