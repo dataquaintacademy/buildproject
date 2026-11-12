@@ -21,8 +21,8 @@ body {
     color: var(--ink);
     background: linear-gradient(
         135deg,
-        rgba(0, 0, 255, 1) 0%,
-        rgba(0, 0, 180, 0.9) 15%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(200, 200, 180, 0.9) 15%,
         transparent 40%
     ),
     linear-gradient(
@@ -33,12 +33,12 @@ body {
     ),
         #050510;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: 5rem;
+    line-height: 2.6;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 2rem 1rem 3rem;
 }
@@ -66,7 +66,7 @@ header::after {
     position: absolute;
     top: 0.25rem;
     right: 2rem;
-    color: rgba(141, 122, 196, 0.28);
+    color: rgba(100, 50, 100, 0.28);
     letter-spacing: 0.8rem;
     pointer-events: none;
 }
