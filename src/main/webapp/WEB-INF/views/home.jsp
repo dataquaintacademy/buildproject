@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <header>
-        <h1>InstaShop</h1>
+        <h1 class="site-brand">InstaShop</h1>
         <a class="button-link" href="${pageContext.request.contextPath}/cart">🛍️ View Cart</a>
     </header>
 

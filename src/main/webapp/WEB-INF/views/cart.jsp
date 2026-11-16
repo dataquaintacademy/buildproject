@@ -11,7 +11,7 @@
 <body>
 <div class="container narrow">
     <header>
-        <h1>Your Cart</h1>
+        <h1 class="site-brand">Your Cart</h1>
         <a class="button-link" href="${pageContext.request.contextPath}/home">🏠 Continue Shopping</a>
     </header>
 
